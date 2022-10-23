@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	   <link href="select.css" rel="stylesheet">
+     <title>CourseMan!</title>
+  </head>
+  <body>
+    <h2 class='logo_select'>Course Man => Update Courses</h2>
+    <button class = "mobile-nav-toggle" style="font-size: 13px; text-align: center;"
+      aria-controls="navigation" aria-expanded="false">
+      <span class = "sr-only">Menu</span>Menu
+    </button>
+    <nav>
+      <ul id = "primary-header" data-visible = "false" class = "primary-header flex">
+        <li>
+          <a href = "index.html">
+            <span aria-hidden="true">00</span>Home
+          </a>
+      </ul>
+    </nav>
+  <div id = 'search_form' style="width: 99%;background-color: #2196F3; font-family: 'Times New Roman', Times, serif; border: 1px solid #2196F3;font-size: larger;">
+    <table style="border:2px solid grey; margin-top: 30px;">
+            <th style="font-size: 40px; text-align: left; ">Search Form</th>
+            <tr>
+                <td style="font-size: 20px;padding: 10px;width: 35%;">Name: </td>
+                <td><input id = 'name' type="text" style= "border-radius: 10px; text-align: center;" ></td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px;padding: 10px;">Search for: </td>
+                <td><input id = 'search' type = "text" placeholder="Enter Search terms..." onfocus = "this.placeholder = ''" onblur="this.placeholder = 'Enter Search terms...'" style= "border-radius: 10px; text-align: center;"></td>
+            </tr>
+            <tr>
+                <td><input id = 'button_course' type = "button" value="Show Courses" style = "font-style:italic" onclick="showCourses(); change();" ></td>
+            </tr>
+        </table>
+    </div>
+    <div id = 'second_box' style="background-color: #2196F3; border: 2px solid gray; padding: 30px;width: 99%;"></div>
+    <script src="./search.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

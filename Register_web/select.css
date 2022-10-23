@@ -1,0 +1,133 @@
+/* Global CSS Variables: https://www.w3schools.com/css/css3_variables.asp */
+/* Reference these in your CSS to get the same color as the mockups */
+:root {
+    /* --sidebar-width: 240px; */
+    --text-color: rgb(50, 50, 50);
+    --background-color: #ffffff;
+    --light-background-color: #f4f4f4;
+    --nav-bar-color: #ffffff;
+    --selected-color: rgb(229, 241, 253);
+    --action-text-color: #ffffff;
+    --action-color: rgb(58, 99, 197);
+    --border-color: darkgray;
+    /* box-sizing:  content-box; */
+  }
+  
+  html {
+    margin-left: 20px;
+  }
+  
+  body {
+    margin-left: 20px;
+    font-size: 24px;
+    background: url(SUNYKorea_AcBldg.jpg);
+    overflow-x: hidden;
+  }
+  .logo_select{
+    text-align: center;
+    color: black;
+    width: 90%;
+  }
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  li {
+    display: inline;
+  }
+  .primary-header{
+    list-style: none;
+    text-align: right;
+    font-size: 20px;
+    background: hsl(0 0% 100% /0.1);
+    backdrop-filter: blur(1rem);
+  }
+  .mobile-nav-toggle{
+    display: none;
+  }
+  @media (max-width:40em){
+    .primary-header{
+      position:fixed;
+      inset: 0 0 0 30%;
+      flex-direction: column;
+      padding: min(35vh, 30rem) 2em;
+      background: hsl(0 0% 100% /0.1);
+      backdrop-filter: blur(1rem);
+      transform: translateX(100%);
+      transition: transform 350ms ease-out;
+    }
+    .primary-header[data-visible = "true"]{
+      transform: translateX(0%);
+    }
+    
+    li{
+      display: flex;
+      padding-bottom: 30px;
+    } 
+    .mobile-nav-toggle{
+      position: absolute;
+      z-index: 9999;
+      background-color: lightblue;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      width:4.5rem;
+      border: 0.8px;
+      aspect-ratio: 1;
+      top:1.5rem;
+      right: 2rem;
+      display: block;
+    }
+    .mobile-nav-toggle[aria-expanded = "true"]{
+      border: double blue;
+    }
+  }
+  
+  a:link{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+  }
+  a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  span{
+    font-weight:bold;
+    margin-right: 10px;
+  }
+  a{
+    margin-right: 10px ;
+  }
+  table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 20px;
+  }
+  table td{
+    padding-top: 15px;
+  }
+  input[type = "button"] {
+    font-size: large;
+    border-radius: 10px;
+    background-color: aqua;
+  }
+  input[type = "text"]{
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
